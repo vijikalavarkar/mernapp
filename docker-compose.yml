@@ -3,6 +3,7 @@ services:
   frontend:
     container_name: frontend
     build: ./frontend
+    image: vijikalavarkar/mernfrontapp:v1
     ports:
       - "5173:5173"
     
@@ -10,6 +11,7 @@ services:
   backend:
     container_name: backend
     build: ./backend
+    image: vijikalavarkar/mernbackapp:v1
     ports:
       - "5050:5050"
     
